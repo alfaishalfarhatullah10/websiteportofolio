@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Alfaisal Farhatullah — Portfolio</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet"/>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor"       id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- ================================================
+       NAVBAR
+  ================================================ -->
+  <nav class="navbar-retro" id="mainNav">
+    <div class="container d-flex align-items-center justify-content-between">
+      <a class="nav-brand" href="#home">Alfaishal<em>.</em>Dev</a>
+
+      <!-- Desktop -->
+      <div class="d-none d-lg-flex align-items-center gap-2">
+        <a href="#home"      class="nav-item-link">Home</a>
+        <a href="#about"     class="nav-item-link">Tentang</a>
+        <a href="#skills"    class="nav-item-link">Skills</a>
+        <a href="#portfolio" class="nav-item-link">Portfolio</a>
+        <a href="#contact"   class="nav-item-link">Kontak</a>
+      </div>
+
+      <!-- Mobile -->
+      <button class="hamburger-btn d-lg-none" id="mobileToggle" aria-label="Menu">
+        <i class="bi bi-list" style="font-size:1.4rem; color:#1A1A1A;" id="hamburgerIcon"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Nav Dropdown -->
+  <div class="mobile-nav" id="mobileNav">
+    <a href="#home"      class="mobile-nav-link">Home</a>
+    <a href="#about"     class="mobile-nav-link">Tentang Saya</a>
+    <a href="#skills"    class="mobile-nav-link">Skills</a>
+    <a href="#portfolio" class="mobile-nav-link">Portfolio</a>
+    <a href="#contact"   class="mobile-nav-link">Kontak</a>
+  </div>
+
+  <!-- ================================================
+       HERO
+  ================================================ -->
+  <section id="home">
+    <div class="hero-inner">
+      <!-- Left -->
+      <div class="hero-left">
+        <div class="hero-eyebrow">Mahasiswa Sistem Informasi — UNPAM Serang</div>
+        <h1 class="hero-name">
+          Alfaisal<br>
+          <span class="italic-line">Farhat&shy;ullah</span>
+        </h1>
+        <p class="hero-tagline">
+          Developer &amp; Designer yang gemar<br>
+          membangun pengalaman digital yang<br>
+          bermakna — dari kode hingga visual.
+        </p>
+        <div class="hero-cta-row">
+          <a href="#portfolio" class="btn-retro-primary">
+            <i class="bi bi-folder2-open"></i> Lihat Karya
+          </a>
+          <a href="#contact" class="btn-retro-outline">
+            <i class="bi bi-send"></i> Hubungi Saya
+          </a>
+        </div>
+      </div>
+
+      <!-- Right: Photo -->
+      <div class="hero-right">
+        <div class="sticker sticker-1">✦ Open to Work!</div>
+        <img src="assets/foto-profil.jpeg" alt="fot-profil">
+        <div class="hero-photo-overlay"></div>
+        <div class="hero-photo-label">Alfaishal Farhatullah — 2026</div>
+        <div class="sticker sticker-2">📍 Serang, Banten</div>
+      </div>
+    </div>
+
+    <!-- Stats bar -->
+    <div class="hero-stats-bar">
+      <div class="stat-box">
+        <div class="stat-num">5<span style="color:#C84B31">+</span></div>
+        <div class="stat-lbl">Proyek Selesai</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-num">7<span style="color:#C84B31">+</span></div>
+        <div class="stat-lbl">Teknologi</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-num">5</div>
+        <div class="stat-lbl">Semester Ditempuh</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-num">∞</div>
+        <div class="stat-lbl">Semangat Belajar</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================
+       MARQUEE
+  ================================================ -->
+  <div class="marquee-wrapper">
+    <div class="marquee-track">
+      <span>HTML5</span>
+      <span>CSS3</span>
+      <span>JavaScript</span>
+      <span>Java</span>
+      <span>Bootstrap</span>
+      <span>Canva</span>
+      <span>CapCut</span>
+      <span>Microsoft Office</span>
+      <span>UI Design</span>
+      <span>Web Dev</span>
+      <!-- duplicate for seamless loop -->
+      <span>HTML5</span>
+      <span>CSS3</span>
+      <span>JavaScript</span>
+      <span>Java</span>
+      <span>Bootstrap</span>
+      <span>Canva</span>
+      <span>CapCut</span>
+      <span>Microsoft Office</span>
+      <span>UI Design</span>
+      <span>Web Dev</span>
+    </div>
+  </div>
+
+  <!-- ================================================
+       ABOUT
+  ================================================ -->
+  <section id="about" class="section-pad">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <!-- Photo -->
+        <div class="col-lg-4 col-md-5 reveal">
+          <div class="about-photo-frame" style="padding: 1.5rem 0 1.5rem 1.5rem; position:relative;">
+            <div class="about-photo-decoration"></div>
+            <div class="about-photo-container">
+              <img src="assets/foto-profil.jpeg" alt="foto-profil">
+            </div>
+            <div class="about-photo-stamp">
+              <div class="stamp-num">S5</div>
+              <div class="stamp-txt">Semester<br>Aktif</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Content -->
+        <div class="col-lg-8 col-md-7 reveal">
+          <div class="about-section-label">Tentang Saya</div>
+          <h2 class="about-heading mb-3">
+            Halo, saya<br>
+            <em>Alfaishal Farhatullah</em>
+          </h2>
+          <p class="about-body mb-4">
+            Saya adalah mahasiswa Sistem Informasi semester 5 di Universitas Pamulang Kampus Serang.
+            Saya memiliki ketertarikan besar dalam dunia pengembangan web dan desain digital.
+            Setiap proyek adalah kesempatan baru untuk belajar, berkreasi, dan menciptakan
+            sesuatu yang bermanfaat.
+          </p>
+
+          <div class="row g-3 mb-4">
+            <div class="col-md-6">
+              <div class="info-row">
+                <div class="info-icon"><i class="bi bi-person-fill"></i></div>
+                <div>
+                  <div class="info-label">Nama</div>
+                  <div class="info-value">Alfaishal Farhatullah</div>
+                </div>
+              </div>
+              <div class="info-row">
+                <div class="info-icon"><i class="bi bi-mortarboard-fill"></i></div>
+                <div>
+                  <div class="info-label">Jurusan</div>
+                  <div class="info-value">Sistem Informasi</div>
+                </div>
+              </div>
+              <div class="info-row">
+                <div class="info-icon"><i class="bi bi-building-fill"></i></div>
+                <div>
+                  <div class="info-label">Universitas</div>
+                  <div class="info-value">UNPAM Kampus Serang</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="info-row">
+                <div class="info-icon"><i class="bi bi-geo-alt-fill"></i></div>
+                <div>
+                  <div class="info-label">Kota</div>
+                  <div class="info-value">Serang, Banten</div>
+                </div>
+              </div>
+              <div class="info-row">
+                <div class="info-icon"><i class="bi bi-envelope-fill"></i></div>
+                <div>
+                  <div class="info-label">Email</div>
+                  <div class="info-value" style="font-size:0.8rem;">Alfaishalfarhatullah10@gmail.com</div>
+                </div>
+              </div>
+              <div class="info-row">
+                <div class="info-icon"><i class="bi bi-whatsapp"></i></div>
+                <div>
+                  <div class="info-label">WhatsApp</div>
+                  <div class="info-value">085280971861</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <a href="#" class="btn-retro-yellow" download>
+            <i class="bi bi-download"></i> Download CV
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================
+       SKILLS
+  ================================================ -->
+  <section id="skills" class="section-pad">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col reveal">
+          <div class="section-label">Kemampuan</div>
+          <h2 class="section-heading">
+            Skills &amp; <em class="heading-stroke" style="-webkit-text-stroke:2px #C84B31; color:transparent;">Tools</em>
+          </h2>
+          <p class="mt-3" style="font-size:0.9rem; color:#666; max-width:500px;">
+            Kumpulan teknologi dan alat yang saya kuasai dalam perjalanan belajar saya.
+          </p>
+        </div>
+      </div>
+
+      <div class="skills-grid reveal">
+
+        <!-- Card 1 -->
+        <div class="skill-card">
+          <div class="skill-number">01</div>
+          <div class="skill-icon"><i class="bi bi-filetype-html"></i></div>
+          <div class="skill-name">HTML5</div>
+          <div class="skill-desc">Membangun struktur halaman web yang semantik dan aksesibel.</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Semantic HTML</span>
+            <span class="skill-tag">Forms</span>
+            <span class="skill-tag">SEO</span>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="skill-card">
+          <div class="skill-number">02</div>
+          <div class="skill-icon"><i class="bi bi-filetype-css"></i></div>
+          <div class="skill-name">CSS3</div>
+          <div class="skill-desc">Mendesain tampilan web yang responsif, animatif, dan estetis.</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Flexbox</span>
+            <span class="skill-tag">Grid</span>
+            <span class="skill-tag">Animation</span>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="skill-card">
+          <div class="skill-number">03</div>
+          <div class="skill-icon"><i class="bi bi-filetype-js"></i></div>
+          <div class="skill-name">JavaScript</div>
+          <div class="skill-desc">Menambahkan interaktivitas dan logika dinamis pada halaman web.</div>
+          <div class="skill-tags">
+            <span class="skill-tag">DOM</span>
+            <span class="skill-tag">ES6+</span>
+            <span class="skill-tag">Events</span>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="skill-card">
+          <div class="skill-number">04</div>
+          <div class="skill-icon"><i class="bi bi-cup-hot-fill"></i></div>
+          <div class="skill-name">Java</div>
+          <div class="skill-desc">Pemrograman berorientasi objek dan logika aplikasi berbasis Java.</div>
+          <div class="skill-tags">
+            <span class="skill-tag">OOP</span>
+            <span class="skill-tag">Logic</span>
+            <span class="skill-tag">Algoritma</span>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="skill-card">
+          <div class="skill-number">05</div>
+          <div class="skill-icon"><i class="bi bi-layout-text-window-reverse"></i></div>
+          <div class="skill-name">Bootstrap</div>
+          <div class="skill-desc">Framework CSS untuk membangun antarmuka yang responsif dengan cepat.</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Grid System</span>
+            <span class="skill-tag">Components</span>
+            <span class="skill-tag">Utility</span>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="skill-card">
+          <div class="skill-number">06</div>
+          <div class="skill-icon"><i class="bi bi-palette2"></i></div>
+          <div class="skill-name">Canva &amp; CapCut</div>
+          <div class="skill-desc">Membuat desain grafis, konten visual, dan video editing kreatif.</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Desain Grafis</span>
+            <span class="skill-tag">Video Edit</span>
+            <span class="skill-tag">Konten</span>
+          </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="skill-card" style="border-bottom:none;">
+          <div class="skill-number">07</div>
+          <div class="skill-icon"><i class="bi bi-file-earmark-word-fill"></i></div>
+          <div class="skill-name">Microsoft Office</div>
+          <div class="skill-desc">Word, Excel, dan PowerPoint untuk dokumentasi dan presentasi profesional.</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Word</span>
+            <span class="skill-tag">Excel</span>
+            <span class="skill-tag">PowerPoint</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================
+       PORTFOLIO
+  ================================================ -->
+  <section id="portfolio" class="section-pad">
+    <div class="container position-relative" style="z-index:1;">
+      <div class="row mb-5 align-items-end">
+        <div class="col-lg-6 reveal">
+          <div class="portfolio-label">Karya &amp; Proyek</div>
+          <h2 class="portfolio-heading">
+            Proyek <em>Pilihan</em><br>Saya
+          </h2>
+        </div>
+        <div class="col-lg-6 reveal" style="text-align:right;">
+          <p style="font-family:'Space Mono',monospace; font-size:0.72rem; color:rgba(245,240,232,0.5); letter-spacing:0.05em;">
+            Semua proyek merupakan tugas kuliah<br>dan eksplorasi mandiri
+          </p>
+        </div>
+      </div>
+
+      <div class="row g-4">
+
+        <!-- Project 1 -->
+        <div class="col-lg-4 col-md-6 reveal">
+          <div class="project-card">
+            <div class="project-thumb thumb-c1">
+              <i class="bi bi-shop project-thumb-icon" style="color:rgba(245,240,232,0.3);"></i>
+              <div class="project-thumb-overlay">
+                <a href="#" class="thumb-action-btn" title="Demo"><i class="bi bi-box-arrow-up-right"></i></a>
+                <a href="#" class="thumb-action-btn" title="Code"><i class="bi bi-github"></i></a>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-num">PROYEK 01 — Web App</div>
+              <div class="project-title">Sistem Informasi Toko Online</div>
+              <p class="project-desc">Aplikasi e-commerce sederhana dengan fitur katalog produk, keranjang belanja, dan manajemen stok. Dibangun sebagai tugas UAS mata kuliah Pemrograman Web.</p>
+              <div class="project-tags">
+                <span class="project-tag">HTML</span>
+                <span class="project-tag">CSS</span>
+                <span class="project-tag">JavaScript</span>
+                <span class="project-tag">Bootstrap</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="col-lg-4 col-md-6 reveal">
+          <div class="project-card">
+            <div class="project-thumb thumb-c2">
+              <i class="bi bi-person-badge project-thumb-icon" style="color:rgba(245,240,232,0.3);"></i>
+              <div class="project-thumb-overlay">
+                <a href="#" class="thumb-action-btn"><i class="bi bi-box-arrow-up-right"></i></a>
+                <a href="#" class="thumb-action-btn"><i class="bi bi-github"></i></a>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-num">PROYEK 02 — Sistem</div>
+              <div class="project-title">Aplikasi Absensi Mahasiswa</div>
+              <p class="project-desc">Sistem absensi digital berbasis web yang memungkinkan dosen mencatat kehadiran mahasiswa secara real-time dengan fitur rekap dan export data.</p>
+              <div class="project-tags">
+                <span class="project-tag">Java</span>
+                <span class="project-tag">HTML</span>
+                <span class="project-tag">CSS</span>
+                <span class="project-tag">Bootstrap</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="col-lg-4 col-md-6 reveal">
+          <div class="project-card">
+            <div class="project-thumb thumb-c3">
+              <i class="bi bi-book project-thumb-icon" style="color:rgba(245,240,232,0.3);"></i>
+              <div class="project-thumb-overlay">
+                <a href="#" class="thumb-action-btn"><i class="bi bi-box-arrow-up-right"></i></a>
+                <a href="#" class="thumb-action-btn"><i class="bi bi-github"></i></a>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-num">PROYEK 03 — Database</div>
+              <div class="project-title">Sistem Perpustakaan Digital</div>
+              <p class="project-desc">Aplikasi manajemen perpustakaan untuk pencatatan buku, peminjaman, dan pengembalian. Dilengkapi fitur pencarian dan laporan transaksi.</p>
+              <div class="project-tags">
+                <span class="project-tag">HTML</span>
+                <span class="project-tag">JavaScript</span>
+                <span class="project-tag">CSS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="col-lg-4 col-md-6 reveal">
+          <div class="project-card">
+            <div class="project-thumb thumb-c4">
+              <i class="bi bi-graph-up-arrow project-thumb-icon" style="color:rgba(245,240,232,0.3);"></i>
+              <div class="project-thumb-overlay">
+                <a href="#" class="thumb-action-btn"><i class="bi bi-box-arrow-up-right"></i></a>
+                <a href="#" class="thumb-action-btn"><i class="bi bi-github"></i></a>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-num">PROYEK 04 — Dashboard</div>
+              <div class="project-title">Dashboard Nilai Akademik</div>
+              <p class="project-desc">Visualisasi data nilai mahasiswa dalam bentuk grafik interaktif. Memudahkan monitoring progress akademik per semester secara visual.</p>
+              <div class="project-tags">
+                <span class="project-tag">JavaScript</span>
+                <span class="project-tag">Bootstrap</span>
+                <span class="project-tag">CSS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="col-lg-4 col-md-6 reveal">
+          <div class="project-card">
+            <div class="project-thumb thumb-c5">
+              <i class="bi bi-camera-video project-thumb-icon" style="color:rgba(245,240,232,0.3);"></i>
+              <div class="project-thumb-overlay">
+                <a href="#" class="thumb-action-btn"><i class="bi bi-play-circle"></i></a>
+                <a href="#" class="thumb-action-btn"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-num">PROYEK 05 — Konten Digital</div>
+              <div class="project-title">Kampanye Media Sosial UNPAM</div>
+              <p class="project-desc">Pembuatan konten visual dan video promosi kampus menggunakan Canva dan CapCut untuk kegiatan penerimaan mahasiswa baru dan acara kampus.</p>
+              <div class="project-tags">
+                <span class="project-tag">Canva</span>
+                <span class="project-tag">CapCut</span>
+                <span class="project-tag">Content</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 6 -->
+        <div class="col-lg-4 col-md-6 reveal">
+          <div class="project-card">
+            <div class="project-thumb thumb-c6">
+              <i class="bi bi-clipboard2-data project-thumb-icon" style="color:rgba(245,240,232,0.3);"></i>
+              <div class="project-thumb-overlay">
+                <a href="#" class="thumb-action-btn"><i class="bi bi-box-arrow-up-right"></i></a>
+                <a href="#" class="thumb-action-btn"><i class="bi bi-github"></i></a>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-num">PROYEK 06 — Analisis</div>
+              <div class="project-title">Laporan Riset Sistem Informasi</div>
+              <p class="project-desc">Dokumentasi dan analisis sistem informasi manajemen menggunakan Microsoft Office — Word untuk laporan, Excel untuk pengolahan data, dan PowerPoint untuk presentasi.</p>
+              <div class="project-tags">
+                <span class="project-tag">MS Word</span>
+                <span class="project-tag">MS Excel</span>
+                <span class="project-tag">PowerPoint</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================
+       CONTACT
+  ================================================ -->
+  <section id="contact" class="section-pad">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col reveal">
+          <div class="section-label">Kontak</div>
+          <h2 class="contact-big-text">
+            Ayo<br><em>Terhubung</em><br>&amp; Berkolaborasi
+          </h2>
+        </div>
+      </div>
+
+      <div class="row g-4 align-items-start">
+        <!-- Info card -->
+        <div class="col-lg-5 reveal">
+          <div class="contact-info-card">
+            <p style="font-family:'Space Mono',monospace; font-size:0.72rem; letter-spacing:0.1em; color:rgba(245,240,232,0.5); text-transform:uppercase; margin-bottom:1.5rem;">
+              ✦ Hubungi Saya
+            </p>
+
+            <a href="mailto:Alfaishalfarhatullah10@gmail.com" class="contact-link-row">
+              <div class="contact-link-icon"><i class="bi bi-envelope-fill"></i></div>
+              <div>
+                <div class="contact-link-label">Email</div>
+                <div class="contact-link-value" style="font-size:0.82rem;">Alfaishalfarhatullah10gmail.com</div>
+              </div>
+            </a>
+
+            <a href="https://wa.me/6285280971861" target="_blank" class="contact-link-row">
+              <div class="contact-link-icon"><i class="bi bi-whatsapp"></i></div>
+              <div>
+                <div class="contact-link-label">WhatsApp</div>
+                <div class="contact-link-value">085280971861</div>
+              </div>
+            </a>
+
+            <div class="contact-link-row" style="pointer-events:none; text-decoration:none;">
+              <div class="contact-link-icon"><i class="bi bi-geo-alt-fill"></i></div>
+              <div>
+                <div class="contact-link-label">Lokasi</div>
+                <div class="contact-link-value">Serang, Banten</div>
+              </div>
+            </div>
+
+            <div class="contact-link-row" style="pointer-events:none;">
+              <div class="contact-link-icon"><i class="bi bi-mortarboard-fill"></i></div>
+              <div>
+                <div class="contact-link-label">Kampus</div>
+                <div class="contact-link-value" style="font-size:0.85rem;">UNPAM Kampus Serang</div>
+              </div>
+            </div>
+
+            <div class="social-row">
+              <a href="#" class="social-btn" title="GitHub"><i class="bi bi-github"></i></a>
+              <a href="#" class="social-btn" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+              <a href="#" class="social-btn" title="Instagram"><i class="bi bi-instagram"></i></a>
+              <a href="https://wa.me/6285280971861" class="social-btn" title="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Form -->
+        <div class="col-lg-7 reveal">
+          <form id="contactForm" novalidate>
+            <div class="row g-4">
+              <div class="col-md-6">
+                <label class="field-label" for="fName">Nama Lengkap</label>
+                <input class="field-input" type="text" id="fName" placeholder="John Doe" required />
+              </div>
+              <div class="col-md-6">
+                <label class="field-label" for="fEmail">Alamat Email</label>
+                <input class="field-input" type="email" id="fEmail" placeholder="john@email.com" required />
+              </div>
+              <div class="col-12">
+                <label class="field-label" for="fSubject">Subjek Pesan</label>
+                <input class="field-input" type="text" id="fSubject" placeholder="Kolaborasi proyek, freelance, dll." required />
+              </div>
+              <div class="col-12">
+                <label class="field-label" for="fMessage">Pesan</label>
+                <textarea class="field-input" id="fMessage" placeholder="Ceritakan kebutuhan atau ide Anda..." required></textarea>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn-retro-primary" style="width:100%; justify-content:center; cursor:none;">
+                  <i class="bi bi-send-fill"></i> Kirim Pesan
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================
+       FOOTER
+  ================================================ -->
+  <footer>
+    <div class="container">
+      <div class="row align-items-center gy-3">
+        <div class="col-md-4">
+          <div class="footer-brand">Alfaishal<em>.</em>Dev</div>
+        </div>
+        <div class="col-md-4 text-md-center">
+          <p class="footer-text mb-0">
+            &copy; 2026 Alfaishal Farhatullah<br>
+            Sistem Informasi — UNPAM Serang
+          </p>
+        </div>
+        <div class="col-md-4 text-md-end">
+          <p class="footer-text mb-0">
+            Dibuat dengan HTML, CSS, JS<br>&amp; Bootstrap 5 ✦
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-top" id="backTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+    <i class="bi bi-chevron-up"></i>
+  </button>
+
+  <!-- Toast -->
+  <div class="toast-retro" id="toastMsg">
+    <i class="bi bi-check-circle-fill"></i>
+    <span>Pesan terkirim! Terima kasih, Faisal akan segera membalas. ✦</span>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
